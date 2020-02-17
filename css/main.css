@@ -253,4 +253,8 @@ html {
   font-size: 1.5rem;
   font-family: "Raleway";
 }
+
+.footer__social img:not(:last-child) {
+  margin-right: 1.2rem;
+}
 /*# sourceMappingURL=main.css.map */

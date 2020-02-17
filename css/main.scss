@@ -215,7 +215,7 @@ html {
   border-bottom: 1px solid hsl(0, 0%, 78%);
   padding-bottom: 5vh;
 
-  h2{
+  h2 {
     font-family: $head-font;
     text-transform: uppercase;
   }
@@ -233,7 +233,7 @@ html {
 
   li {
     list-style: none;
-     margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   a {
@@ -243,4 +243,8 @@ html {
     font-size: 1.5rem;
     font-family: $para-font
   }
+}
+
+.footer__social img:not(:last-child) {
+  margin-right: 1.2rem;
 }
