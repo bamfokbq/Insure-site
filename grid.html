@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Grid</title>
+  </head>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      display: grid;
+      grid-template-columns: [full-start]10vw[center-start] 1fr [center-end]10vw[full-end];
+      background-color: #ddd;
+      font-size: 2rem;
+      font-family: "Open sans";
+      text-transform: uppercase;
+    }
+    .header {
+      background-color: tomato;
+      grid-column: full-start / full-end;
+    }
+    .welcome {
+      background-color: purple;
+      grid-column: full-start / full-end;
+    }
+    .work {
+      background-color: greenyellow;
+      grid-column: center-start / center-end;
+    }
+    .find {
+      background-color: skyblue;
+      grid-column: center-start / center-end;
+    }
+    .footer {
+      background-color: darkorange;
+      grid-column: full-start / full-end;
+    }
+  </style>
+  <body>
+    <section class="header">header</section>
+    <section class="welcome">Welcome</section>
+    <section class="work">Work</section>
+    <section class="find">Find more</section>
+    <section class="footer">Footer</section>
+  </body>
+</html>
