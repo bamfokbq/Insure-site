@@ -4,13 +4,13 @@
   box-sizing: inherit;
 }
 
-  $head-font: "Roboto";
-  $para-font: "Raleway";
-  $dark-violet: hsl(256, 26%, 20%);
-  $grayish-blue: hsl(216, 30%, 68%);
-  $neu-dark-violet: hsl(270, 9%, 17%);
-  $neu-grayish-violet: hsl(270, 2%, 50%);
-  $white: #fff;
+$head-font: "Roboto";
+$para-font: "Raleway";
+$dark-violet: hsl(256, 26%, 20%);
+$grayish-blue: hsl(216, 30%, 68%);
+$neu-dark-violet: hsl(270, 9%, 17%);
+$neu-grayish-violet: hsl(270, 2%, 50%);
+$white: #fff;
 
 html {
   box-sizing: border-box;
@@ -64,7 +64,7 @@ html {
 
   // Logo
   &__log {
-    color:$dark-violet;
+    color: $dark-violet;
   }
 
   // Navigation
@@ -83,11 +83,11 @@ html {
           text-decoration: none;
           color: $neu-grayish-violet;
           padding: 8px 18px;
-          border: 2px solid hsl(0, 0%, 100%);
+          border: 2px solid $white;
           transition: all 0.2s linear;
 
           &:hover {
-            background-color:$dark-violet;
+            background-color: $dark-violet;
             color: $white;
             border: 2px solid $dark-violet;
           }
@@ -133,6 +133,7 @@ html {
         color: $white;
         cursor: pointer;
         text-decoration: none;
+
         &:hover {
           color: $dark-violet;
           background-color: $white;
@@ -158,13 +159,16 @@ html {
   gap: 5rem;
   margin-top: 4rem;
 }
+
 .services img,
 .services h3 {
   margin-bottom: 2rem;
 }
+
 .services p {
   margin-bottom: 8rem;
 }
+
 // ABOUT US SECTION
 .site__about {
   height: 40vh;
@@ -172,21 +176,71 @@ html {
   align-items: center;
   justify-content: space-around;
   color: $white;
+  margin-bottom: 8rem;
 
-  &--header{
-      font-size: 4rem;
-      width: 25vw;
+  &--header {
+    font-size: 4rem;
+    width: 25vw;
   }
 
-  button{
-      background-color: hsl(256, 26%, 20%);
-      color: rgb(230, 230, 230);
-      padding: 1rem 2rem;
-      font-size: 2rem;
-      a{
-          text-decoration: none;
-          color: rgb(230, 230, 230);
-          background-color: $grayish-blue;
-      }
+  button {
+    background-color: hsl(256, 26%, 20%);
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $white;
+      color: $dark-violet;
+    }
+
+    a {
+      text-decoration: none;
+      outline: none;
+      color: $white;
+    }
+  }
+
+  button:hover a {
+    background-color: $white;
+    color: $dark-violet;
+  }
+}
+
+// FOOTER OF THE PAGE
+.site__footer--header {
+  display: flex;
+  justify-content: space-between;
+  margin: 8vh 10vw;
+  border-bottom: 1px solid hsl(0, 0%, 78%);
+  padding-bottom: 5vh;
+
+  h2{
+    font-family: $head-font;
+    text-transform: uppercase;
+  }
+}
+
+.site__footer--body {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: auto 10vw;
+
+  h3 {
+    margin-bottom: 3rem;
+    color: hsl(0, 0%, 68%);
+  }
+
+  li {
+    list-style: none;
+     margin-bottom: 1.5rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: $dark-violet;
+    font-weight: bold;
+    font-size: 1.5rem;
+    font-family: $para-font
   }
 }

@@ -81,7 +81,7 @@ html {
   text-decoration: none;
   color: #807d82;
   padding: 8px 18px;
-  border: 2px solid white;
+  border: 2px solid #fff;
   -webkit-transition: all 0.2s linear;
   transition: all 0.2s linear;
 }
@@ -180,6 +180,7 @@ html {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   color: #fff;
+  margin-bottom: 8rem;
 }
 
 .site__about--header {
@@ -189,14 +190,67 @@ html {
 
 .site__about button {
   background-color: #2d2640;
-  color: #e6e6e6;
   padding: 1rem 2rem;
   font-size: 2rem;
+  cursor: pointer;
+}
+
+.site__about button:hover {
+  background-color: #fff;
+  color: #2d2640;
 }
 
 .site__about button a {
   text-decoration: none;
-  color: #e6e6e6;
-  background-color: #95a9c6;
+  outline: none;
+  color: #fff;
+}
+
+.site__about button:hover a {
+  background-color: #fff;
+  color: #2d2640;
+}
+
+.site__footer--header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 8vh 10vw;
+  border-bottom: 1px solid #c7c7c7;
+  padding-bottom: 5vh;
+}
+
+.site__footer--header h2 {
+  font-family: "Roboto";
+  text-transform: uppercase;
+}
+
+.site__footer--body {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  margin: auto 10vw;
+}
+
+.site__footer--body h3 {
+  margin-bottom: 3rem;
+  color: #adadad;
+}
+
+.site__footer--body li {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.site__footer--body a {
+  text-decoration: none;
+  color: #2d2640;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: "Raleway";
 }
 /*# sourceMappingURL=main.css.map */
