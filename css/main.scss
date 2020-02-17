@@ -4,14 +4,13 @@
   box-sizing: inherit;
 }
 
-::root {
   $head-font: "Roboto";
   $para-font: "Raleway";
   $dark-violet: hsl(256, 26%, 20%);
   $grayish-blue: hsl(216, 30%, 68%);
   $neu-dark-violet: hsl(270, 9%, 17%);
   $neu-grayish-violet: hsl(270, 2%, 50%);
-}
+  $white: #fff;
 
 html {
   box-sizing: border-box;
@@ -32,7 +31,7 @@ html {
   // Landing Page
   &__landingPage {
     grid-column: full-start / full-end;
-    background-color: hsl(256, 26%, 20%);
+    background-color: $dark-violet;
   }
 
   // Activities
@@ -44,7 +43,7 @@ html {
   // About
   &__about {
     grid-column: center-start / center-end;
-    background-color: hsl(256, 26%, 20%);
+    background-color: $dark-violet;
   }
 
   // Footer
@@ -65,7 +64,7 @@ html {
 
   // Logo
   &__log {
-    color: hsl(256, 26%, 20%);
+    color:$dark-violet;
   }
 
   // Navigation
@@ -73,7 +72,7 @@ html {
     &--list ul {
       list-style: none;
       display: flex;
-      color: hsl(270, 2%, 50%);
+      color: $neu-grayish-violet;
       font-size: 0.9vw;
       font-weight: 700;
 
@@ -82,15 +81,15 @@ html {
 
         a {
           text-decoration: none;
-          color: hsl(270, 2%, 50%);
+          color: $neu-grayish-violet;
           padding: 8px 18px;
           border: 2px solid hsl(0, 0%, 100%);
           transition: all 0.2s linear;
 
           &:hover {
-            background-color: hsl(256, 26%, 20%);
-            color: white;
-            border: 2px solid hsl(256, 26%, 20%);
+            background-color:$dark-violet;
+            color: $white;
+            border: 2px solid $dark-violet;
           }
         }
       }
@@ -115,28 +114,28 @@ html {
 
       h1 {
         font-size: 5rem;
-        color: white;
+        color: $white;
         margin: 5vh auto;
         width: 50rem;
       }
 
       article {
-        color: white;
+        color: $white;
         margin: 5vh auto;
         width: 50rem;
       }
 
       a {
         margin-left: 3vh;
-        background-color: hsl(256, 26%, 20%);
+        background-color: $dark-violet;
         padding: 10px 20px;
-        border: 2px solid white;
-        color: white;
+        border: 2px solid $white;
+        color: $white;
         cursor: pointer;
         text-decoration: none;
         &:hover {
-          color: hsl(256, 26%, 20%);
-          background-color: white;
+          color: $dark-violet;
+          background-color: $white;
           font-weight: 600;
         }
       }
@@ -172,7 +171,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color: white;
+  color: $white;
 
   &--header{
       font-size: 4rem;
@@ -187,6 +186,7 @@ html {
       a{
           text-decoration: none;
           color: rgb(230, 230, 230);
+          background-color: $grayish-blue;
       }
   }
 }
